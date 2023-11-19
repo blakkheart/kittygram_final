@@ -15,6 +15,7 @@ jobs:
           POSTGRES_USER: kittygram_user
           POSTGRES_PASSWORD: kittygram_password
           POSTGRESS_DB: kittygram
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
         ports:
           - 5432:5432
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
