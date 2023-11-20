@@ -19,6 +19,7 @@ services:
       - db
     volumes:
       - media:/app/media
+      - static:/backend_static
   frontend:
     env_file: .env
     image: blakkheart/kittygram_frontend
