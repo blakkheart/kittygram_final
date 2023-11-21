@@ -68,10 +68,10 @@ jobs:
 name: Kittygram Workflow For Build and Deploy
 on:
   workflow_run:
-    workflows: ["Test"]
+    workflows: [Kittygram Workflow For Tests]
+    branches: [main]
     types:
       - completed
-    branches: [main]
 
 jobs:
   build_backend_and_push_to_docker_hub:
