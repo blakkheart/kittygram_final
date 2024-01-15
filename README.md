@@ -17,8 +17,9 @@ Kittygram Final - это веб-приложение для публикации
 
 
 ## Запуск проекта
+Создать .env с переменными по примеру .env.example.
 
-Выполняем запуск:
+Выполнить запуск:
 
 ```bash
 sudo docker compose -f docker-compose.yml up
